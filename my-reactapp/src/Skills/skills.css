@@ -1,0 +1,105 @@
+/* .main-skill{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 770px;
+    position: relative;
+    left: 34rem;
+    bottom: 1rem;
+}
+.addSkills{
+    height :48px;
+    width: 348px;
+    text-align: left;
+    padding: 12px 0 12px 0;
+}
+.addSkills > h5{
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 24px;
+    text-align: left;
+    width: 200%;
+    margin-left: 20px; 
+    /* margin-top: 18px; */
+    /* box-sizing: border-box; */
+    /* outline: rgb(153, 153, 153) solid 1px ; */
+     /* border-bottom-color: gray;
+      border-top-color: black solid 1px;
+ } 
+ .allSkills{
+    margin-left: 20px;
+}
+
+.skill-modal{
+    position: relative;
+    left: 40rem;
+    top: 1.7rem;
+.modal-body-skill > input{
+    margin-left: 20px;
+    width: 85%;
+} */
+.skillCompHeading{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 770px;
+    position: relative;
+    left: 34rem;
+    bottom: 1rem;
+}
+.skillDelete{
+    float: right;
+    /* padding-right: 1rem; */
+    /* position: relative; */
+    margin-right: 1rem;
+    /* right: 1rem; */
+}
+.del{
+    /* display: flex; */
+    position: relative;
+    right: 2rem;
+}
+.modalSkills{
+   position: relative;
+   left: 40rem;
+   bottom: 25px;
+}
+.skillsSpan > h3{
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+.skillsVal{
+    position: relative;
+    left: 15px;
+}
+.ver{
+    margin-left: 20px;
+    line-height: 9px;
+    font-weight: 270;
+}
+.inptt{
+    border: 1px solid lightgray;
+	width: 90%;
+	margin: 0px;
+    position: relative;
+    left: 1rem;
+}

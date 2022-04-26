@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Linkedin Replica</title>
+  <script src="script2.js" defer></script>
+</head>
+
+<body>
+  <!-- Start of navigation bar -->
+  <div class="header">
+    <div class="header_left">
+      <img src="images/logo_linkedin.png" alt="" />
+      <div class="header_search">
+        <i class="material-icons"> search </i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <div class="header_right">
+      <div class="headerOption">
+        <i class="material-icons headerOption_icon">home</i>
+        <h3>Home</h3>
+      </div>
+      <div class="headerOption">
+        <i class="material-icons headerOption_icon">people</i>
+        <h3>Jobs</h3>
+      </div>
+      <div class="headerOption">
+        <i class="material-icons headerOption_icon">message</i>
+        <h3>Messages</h3>
+      </div>
+      <div class="headerOption">
+        <i class="material-icons headerOption_icon">notifications</i>
+        <h3>Notifications</h3>
+      </div>
+      <div class="headerOption">
+        <i class="material-icons headerOption_icon">account_box</i>
+        <h3>Me</h3>
+      </div>
+    </div>
+  </div>
+  <!-- End of navigation bar -->
+
+  <!-- Main body starts -->
+  <div class="borderColor">
+    <div class="main_body">
+      <img src="images/bg_photo.png" class="main_body" alt="" />
+    </div>
+    <img src="images/profile-pic.png" class="profile-pic" alt="" />
+    <div class="white_body">
+      <br /><br /><br /><br />
+      <!-- <div class="pencilicon">
+        <i class="material-icons"> edit </i>
+      </div> -->
+      <div class="pad">
+        <form name="myForm">
+          <h3 id="mainName">Name</h3>
+          <br />
+          <p id="attend"></p>
+          <br /><u><i>
+              <h3 id="email">Email</h3>
+            </i></u>
+          <br />
+        </form>
+        <button type="button" class="button">Open to</button>
+
+        <button type="button" class="button">Add Section</button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <!-- main body ends -->
+
+  <!-- modal starts -->
+  <i class="material-icons button2" id="modal-btn"> edit </i>
+
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <form name="myForm1">
+          <h2>Edit Personal Details</h2>
+          <hr style="opacity: 0.4;">
+          <br />
+          <p style="opacity: 0.5;">First Name*</p>
+          <input style="padding: 0.7rem;  width: 85%;
+          " name="fname" type="text" id="name-first" placeholder="Enter first name" />
+          <br />
+          <br />
+          <p style="opacity: 0.5;">Last Name*</p>
+          <input type="text" style="padding: .7rem;  width: 85%;
+          " name="lname" id="name-last" placeholder="Enter last name" />
+          <br />
+          <br />
+          <p style="opacity: 0.5;">Enter your email-id</p>
+          <input type="text" style="padding: .7rem;  width: 85%;
+          " name="emailname" id="emailId" placeholder="123@gmail.com" />
+          <br />
+          <br />
+      </div>
+
+      <div class="input">
+        <input type="submit" id="submit" style="width: 95%" onClick="onBtnClick(); closeModal(); add_name()"
+          value="Submit" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal ends -->
+
+  <!-- education section starts -->
+  <div class="main_body_2">
+    <i class="material-icons button2" id="modal-btn-2"> add </i>
+    <br />
+    <h3 class="edu">Education</h3>
+    <hr>
+    <br />
+
+    <div class="container2">
+      <div class="to-dos2" id="todocontainer2"></div>
+    </div>
+  </div>
+  </div>
+  <!-- education section 2 ends -->
+
+  <!-- Modal 2 starts  -->
+
+  <div id="my-modal-2" class="modal-2">
+    <div class="modal-content-2">
+      <div class="modal-header">
+        <span class="close-2">&times;</span>
+        <h2>Edit College Details</h2>
+        <hr>
+      </div>
+      <br>
+      <form name="myForm2">
+        <p style="opacity: 0.5;">Name of Institution</p>
+        <input type="text" style="padding: .7rem;" id="nameInsti">
+        <br>
+        <br>
+        <p style="opacity: 0.5;">Type of Degree</p>
+
+        <input type="text" style="padding: .7rem; width: 85%;" id="nameofdegree">
+        <br>
+        <br>
+        <p style="opacity: 0.5;">Field of Study</p>
+
+        <input type="text" style="padding: .7rem;  width: 85%;
+        " id="nameoffield">
+        <br>
+      </form>
+
+
+      <div class="input">
+        <input type="submit" id="submit" style="width: 95%" onClick="editEducation(); closeModal2(); add_edu()"
+          value="Submit" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 ends -->
+
+  <!-- Skills section  starts-->
+  <div class="main_body_3">
+    <br />
+    <h3 class="edu">Skills and Endorsement's</h3>
+    <hr />
+
+    <i class="material-icons button2" id="modal-btn-3"> add </i>
+    <ul>
+      <div class="container">
+        <div class="to-dos" id="toDoContainer"> </div>
+      </div>
+    </ul>
+  </div>
+  <!-- Skills section ends -->
+  <!-- Modal for skill section starts -->
+  <div class="plus">
+    <div id="my-modal-3" class="modal-3">
+      <div class="modal-content-3">
+        <div class="modal-header">
+          <span class="close-3">&times;</span>
+
+          <h3>Edit Skill Section</h3>
+          <br />
+          <hr>
+          <br>
+          <form name="myForm3">
+
+            <br>
+            <p style="opacity: 0.5;">Add skills</p>
+            <!-- The adding section starts -->
+            <div class="container">
+              <input id="inputField" placeholder="enter skill" style="width: 85%; padding: 0.7rem;" type="text">
+          </form>
+        </div>
+
+        <!-- The adding section ends -->
+      </div>
+      <div class="input">
+        <input type="submit" id="submit" style="width: 95%;" onClick="editSkills();closeModal3(); add_skills()"
+          value="Submit" />
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Employment section starts -->
+  <div class="main_body_4">
+
+    <i class="material-icons button2" id="modal-btn-4"> add </i>
+    <h3 class="employment">Employment and Experiences</h3>
+
+    <hr />
+    <br />
+    <div class="detailsOfEmployment">
+      <div class="to-dos3" id="toDoContainer3"></div>
+    </div>
+  </div>
+  <!-- employment section ends-->
+
+  <!-- modal for experince starts -->
+  <div id="my-modal-4" class="modal-4">
+    <div class="modal-content-4">
+      <div class="modal-header">
+        <span class="close-4">&times;</span>
+        <h2>Edit College Details</h2>
+        <br>
+        <hr>
+
+      </div>
+      <br>
+      <form name="myForm4">
+        <p style="opacity: 0.5;">Name of Company</p>
+
+        <input type="text" style="padding: .7rem;  width: 85%;
+        " id="nameCompany">
+        <br>
+        <br>
+        <p style="opacity: 0.5;">Title of Job</p>
+
+        <input type="text" style="padding: .7rem;  width: 85%;
+        " id="nameofjob">
+        <br>
+        <br>
+        <p style="opacity: 0.5;">Duration</p>
+
+        <input type="text" style="padding: .7rem;  width: 85%;
+        " id="nameofdur">
+        <br>
+      </form>
+
+
+      <div class="input">
+        <input type="submit" id="submit" style="width: 95%" onClick="editExperince(); closeModal4(); add_exp()"
+          value="Submit" />
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- modal for experince ends -->
+
+
+  <script src="script.js"></script>
+
+</body>
+<footer>
+  <fieldset style="padding:1rem ; margin-top: 2rem;">
+    <p>Double click to delete an item or info</p>
+  </fieldset>
+</footer>
+
+</html>

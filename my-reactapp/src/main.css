@@ -1,0 +1,68 @@
+.image{
+    /* height: 159px; */
+	width: 770px;
+    justify-content: center;
+	position: relative;
+	top: 25px;
+    left: 34rem;
+    border-top-right-radius: 50%;
+
+}
+.avatar{
+    transform: scale(3);
+    position: relative;
+    left: 5rem;
+    bottom: 2.6rem;
+    z-index: 1;
+}
+.basic-info .info{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid lightgray; */
+    border-bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    /* padding-bottom: -5px; */
+    padding-top: 50px;
+    width: 770px;
+    position: relative;
+    left: 34rem;
+    bottom: 1rem;
+}
+.name{
+    margin-left: 20px;
+}
+.info> p {
+    margin-left: 20px;
+    line-height: 9px;
+}
+.info > button{
+    width: 4rem;
+    position: relative;
+    left: 40rem;
+    bottom: 7rem;
+}
+.modal-content{
+    position: relative;
+    right: 11rem;
+    width:729px !important;
+}
+.modal-body{
+    line-height: 24px;
+}
+.modal-body > p {
+    font-weight: 270;
+    font-size: 16px;
+    position: relative;
+    top: 1rem;
+}
+#exampleModal{
+    background: rgb(0, 0, 0,0.5) ;
+
+}
+.modal-body > input{
+    border: 1px solid lightgray;
+	width: 95%;
+	margin: 0px;
+}

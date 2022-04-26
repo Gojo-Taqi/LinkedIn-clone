@@ -1,0 +1,42 @@
+.header{
+    background-color: #fff;
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.linkedin-icon{
+    margin: 1rem;
+    position: relative;
+    right: 0.4rem;
+    bottom: 8px;
+    transform: scale(2.2);
+    margin-right: 20px;
+
+}
+.header-search{
+    /* padding: 10px; */
+    display: flex;
+    align-items:center ;
+    border-radius: 5px;
+    height: 40px;
+    color: gray;
+    background-color: #eef3f8;
+
+}
+.header-search > input{
+    outline: none;
+    border: none;
+    background:none;
+    padding: none;
+}
+.headerLeft{
+    display: flex;
+    position: relative;
+    right: 4rem;
+    top: 0.3rem;
+}
+.headerRight{
+    display: flex;
+    border-bottom: none;
+}

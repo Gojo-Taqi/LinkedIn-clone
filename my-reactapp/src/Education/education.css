@@ -1,0 +1,56 @@
+.main-edu{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 770px;
+    position: relative;
+    left: 34rem;
+    bottom: 1rem;
+}
+.eduInfo > h3{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 5px;;
+}
+.addEdu > h5{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;;
+}
+.addEdu > h6{
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 24px;
+    text-align: left;
+    width: 200%;
+    margin-left: 20px;
+    /* margin-top: 18px; */
+    box-sizing: border-box;
+    /* outline: rgb(153, 153, 153) solid 1px ; */
+    /* border-bottom-color: gray;
+     */
+     border-top-color: black solid 1px;
+}
+.eduModal{
+    position: relative;
+    top: 2rem;
+    left:40rem;
+}
+.eduInfo{
+    position: relative;
+    bottom: 1rem;
+}
+.edu-btn{
+    width: 4rem !important;
+}

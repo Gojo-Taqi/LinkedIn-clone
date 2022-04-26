@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+                Login Form
+            </div>
+
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" id="email" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" id="pass" required id="pass">
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" id="submit" onclick="check();login();fetchSkills()" value="Login">
+                    </div>
+                    <div class="signup-link">
+                        Not a member? <a href="http://127.0.0.1:5501/views/signup.html">Signup now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function check() {
+
+        submit.addEventListener("click", function (event) {
+            event.preventDefault();
+
+        });
+    }
+    pass.value = "";
+
+    function login() {
+
+        let em = document.getElementById("email").value;
+        let pass = document.getElementById("pass").value;
+
+        fetch('http://localhost:3333/user/login/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "Email": em,
+                "Password": pass
+            })
+        })
+            .then((res) => {
+                if (res.status === 200) {
+                    window.location.href = 'http://127.0.0.1:5501/Linkedin_replica/index.html'
+                } else {
+                    alert("Wrong credentials")
+                }
+            }).then((varble) => {
+                window.localStorage.setItem("EmailId", em)
+                console.log(em)
+            })
+            .catch(error => console.log('error', error));
+
+    }
+
+</script>
+
+</html>
